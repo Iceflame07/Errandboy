@@ -13,9 +13,7 @@ public class Card {
 
     @Id
     private String cardType;
-    private String cardLength;
-    private String visaCard;
-    private String masterCard;
+    private String cardNumber;
 
     public static String cardFigures(String number){
 

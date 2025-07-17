@@ -1,5 +1,4 @@
-package walkingcompiler.dto;
-
+package walkingcompiler.data.models;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -14,9 +13,7 @@ public class CardDto {
 
     @Id
     private String cardType;
-    private String cardLength;
-    private String visaCard;
-    private String masterCard;
+    private String cardNumber;
 
     public static String cardFigures(String number){
 

@@ -7,7 +7,5 @@ import walkingcompiler.data.models.Card;
 public interface CardRepository extends MongoRepository <Card, String> {
 
     Card findByCardType(String cardType);
-    Card findByVisaCard(String visaCard);
-    Card findByMasterCard(String masterCard);
     Card findByCardLength(String cardLength);
 }

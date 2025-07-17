@@ -23,10 +23,10 @@ public class RiderController {
         return new ResponseEntity<>(RiderMapper.mapToRiderDto(ride), HttpStatus.CREATED);
     }
 
-    @PostMapping("/ride")
-    public ResponseEntity<Rider> ride(@RequestBody Rider ride) {
-        Rider found = RiderMapper.mapToRider(ride);
-        Rider user = riderService.findByFirstName(found.getFirstName());
-        return new ResponseEntity<>(RiderMapper.mapToRider(user), HttpStatus.OK);
+    @PostMapping("/user")
+    public ResponseEntity<Rider> user(@RequestBody Rider user) {
+        Rider found = RiderMapper.mapToRider(user);
+        Rider use = riderService.findByFirstName(found.getFirstName());
+        return new ResponseEntity<>(RiderMapper.mapToRider(use), HttpStatus.OK);
     }
 }
