@@ -9,11 +9,12 @@ import org.springframework.data.annotation.Id;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class CardDto {
+public class Payment {
 
     @Id
-    private String cardType;
+    private String paymentType;
     private String cardNumber;
+    private String companyAccount;
 
     public static String cardFigures(String number){
 

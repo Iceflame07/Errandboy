@@ -75,12 +75,12 @@ public class ExceptionMapper {
         return v;
     }
 
-    public static Card CardNotfoundException(Card card){
-        Card c = new Card();
-        c.setVisaCard(card.getVisaCard());
-        c.setMasterCard(card.getMasterCard());
-        c.setCardLength(card.getCardLength());
-        return c;
+    public static String PaymentNotFoundException(String payment){
+        Payment p = new Payment();
+        p.setPaymentType(p.getPaymentType());
+        p.setCardNumber(p.getCardNumber());
+        p.setCompanyAccount(p.getCompanyAccount());
+        return payment;
     }
 
     public static Cart CartNotfoundException(Cart cart){

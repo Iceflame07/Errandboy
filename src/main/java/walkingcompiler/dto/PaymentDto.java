@@ -1,4 +1,4 @@
-package walkingcompiler.data.models;
+package walkingcompiler.dto;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -9,11 +9,12 @@ import org.springframework.data.annotation.Id;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Card {
+public class PaymentDto {
 
     @Id
-    private String cardType;
+    private String paymentType;
     private String cardNumber;
+    private String companyAccount;
 
     public static String cardFigures(String number){
 
